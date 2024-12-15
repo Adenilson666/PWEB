@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Consultas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gerenciamento de Consultas</h1>
+    </header>
+
+    <!-- Seção para cancelar consultas -->
+    <section id="cancelar-consultas">
+        <h2>Cancelar Consulta</h2>
+        <label for="consultaId">ID da Consulta:</label>
+        <input type="text" id="consultaId" placeholder="Digite o ID da consulta">
+        <button onclick="cancelarConsulta()">Cancelar Consulta</button>
+        <p id="mensagem-cancelamento"></p>
+    </section>
+
+    <!-- Seção para visualizar o histórico -->
+    <section id="historico-consultas">
+        <h2>Histórico de Consultas</h2>
+        <button onclick="carregarHistorico()">Carregar Histórico</button>
+        <ul id="lista-historico">
+            <!-- Consultas serão carregadas aqui -->
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
