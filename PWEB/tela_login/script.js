@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 localStorage.setItem('token', data.token);
 
                 // Redireciona para a URL da página de login (corrigido)
-                window.location.href = '../marcar_consultas/index.html';
+                window.location.href = '../tela_menu_principal/menu_principal.html';
             })
             .catch(error => {
                 console.error('Erro ao fazer login:', error);

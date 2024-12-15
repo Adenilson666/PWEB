@@ -1,7 +1,7 @@
 package com.arllansantana.springbootjwtauth.security.jwt;
 
 import java.nio.charset.StandardCharsets;
-import java.security.Key;
+// import java.security.Key;
 import java.util.Date;
 
 import com.arllansantana.springbootjwtauth.security.services.UserDetailsImpl;
