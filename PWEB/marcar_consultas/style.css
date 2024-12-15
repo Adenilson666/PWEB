@@ -13,9 +13,7 @@ body {
     background-color: #f9f9f9;
 }
 
-nav > a > img {  // Estilo para imagens na navegação
-width: 35px;
-}
+
 
 .container {
     width: 100%;
