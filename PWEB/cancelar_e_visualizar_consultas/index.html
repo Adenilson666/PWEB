@@ -3,32 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerenciar Consultas</title>
+    <title>Gerenciamento de Consultas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1>Gerenciamento de Consultas</h1>
+        <h1>Secretaria Municipal de Saúde</h1>
     </header>
 
-    <!-- Seção para cancelar consultas -->
-    <section id="cancelar-consultas">
-        <h2>Cancelar Consulta</h2>
-        <label for="consultaId">ID da Consulta:</label>
-        <input type="text" id="consultaId" placeholder="Digite o ID da consulta">
-        <button onclick="cancelarConsulta()">Cancelar Consulta</button>
-        <p id="mensagem-cancelamento"></p>
+    <!-- Próximas Consultas -->
+    <section id="proximas-consultas">
+        <h2>Próximas Consultas</h2>
+        <div class="consulta" id="consulta-1">
+            <p><strong>Especialidade:</strong> Cardiologia</p>
+            <p><strong>Data:</strong> 20/12/2024</p>
+            <p><strong>Hora:</strong> 14:00</p>
+            <p><strong>Local:</strong> Posto de Saúde Jaraguá</p>
+            <button class="cancelar-btn" onclick="cancelarConsulta('consulta-1')">Cancelar</button>
+        </div>
+        <div class="consulta" id="consulta-2">
+            <p><strong>Especialidade:</strong> Dermatologia</p>
+            <p><strong>Data:</strong> 22/12/2024</p>
+            <p><strong>Hora:</strong> 10:00</p>
+            <p><strong>Local:</strong> Posto de Saúde Centro</p>
+            <button class="cancelar-btn" onclick="cancelarConsulta('consulta-2')">Cancelar</button>
+        </div>
     </section>
 
-    <!-- Seção para visualizar o histórico -->
+    <!-- Histórico de Consultas -->
     <section id="historico-consultas">
         <h2>Histórico de Consultas</h2>
-        <button onclick="carregarHistorico()">Carregar Histórico</button>
-        <ul id="lista-historico">
-            <!-- Consultas serão carregadas aqui -->
-        </ul>
+        <div class="historico" id="historico-1">
+            <p><strong>Especialidade:</strong> Ortopedia</p>
+            <p><strong>Data:</strong> 10/12/2024</p>
+            <p><strong>Hora:</strong> 09:00</p>
+            <p><strong>Local:</strong> Posto de Saúde Centro</p>
+            <button class="ver-prontuario">Ver Prontuário</button>
+        </div>
     </section>
 
+    <!-- Rodapé -->
+    <footer>
+        <p>Rua Sá e Albuquerque, 235, Jaraguá, Maceió/AL CEP 57022-180<br>Telefone: (82) 3312-5860</p>
+    </footer>
+
+    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
