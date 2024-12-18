@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var senha = document.getElementById('senha').value;
         var confirmarSenha = document.getElementById('confirmar-senha').value;
 
+
         // Validação da senha
         if (senha !== confirmarSenha) {
             alert("As senhas não coincidem!");
