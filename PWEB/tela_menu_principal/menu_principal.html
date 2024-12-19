@@ -16,7 +16,7 @@
             const icon = document.getElementById('profile-icon');
             if (!menu.contains(event.target) && !icon.contains(event.target)) {
                 menu.style.display = 'none';
-            }
+            } 
         });
     </script>
 </head>
@@ -27,8 +27,8 @@
             <img id="profile-icon" class="profile-icon" src="/PWEB/imagens/icone.png" alt="Perfil" onclick="toggleProfileMenu()">
             <div id="profile-menu" class="profile-menu">
                 <ul>
-                    <li onclick="location.href='editar_cadastro.html'">Editar Perfil</li>
-                    <li onclick="location.href='logout.html'">Sair</li>
+                    <li onclick="location.href='../editar_cadastro/editar_cadastro.html'">Editar Perfil</li>
+                    <li onclick="location.href='../pagina_inicial/pagina_inicial.html'">Sair</li>
                 </ul>
             </div>
         </header>

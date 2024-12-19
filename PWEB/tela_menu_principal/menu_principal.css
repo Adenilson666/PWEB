@@ -42,7 +42,7 @@ body {
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
-    width: 40px; /* Tamanho ajustado apenas para o ícone */
+    width: 40px;
     height: auto;
     cursor: pointer;
 }
