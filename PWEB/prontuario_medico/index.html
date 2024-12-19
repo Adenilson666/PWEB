@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Cabeçalho -->
-    <header>
-        <div class="header-container">
-            <h1>Secretaria Municipal de Saúde</h1>
-            <img src="https://img.icons8.com/material-outlined/24/user.png" alt="Perfil" class="profile-icon">
-        </div>
-    </header>
-
+        <header class="main-header">
+            Secretaria Municipal de Saúde
+            <img id="profile-icon" class="profile-icon" src="../imagens/icone.png" alt="Perfil" onclick="toggleProfileMenu()">
+            <div id="profile-menu" class="profile-menu">
+                <ul>
+                    <li onclick="location.href='editar_cadastro.html'">Editar Perfil</li>
+                    <li onclick="location.href='logout.html'">Sair</li>
+                </ul>
+            </div>
+        </header>
     <!-- Conteúdo Principal -->
     <main>
         <h2>Prontuário</h2>
