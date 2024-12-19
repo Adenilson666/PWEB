@@ -104,8 +104,8 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error("Formulário 'trocarSenhaForm' não encontrado.");
         }
     })
-    .catch(error => {
-        console.error('Erro ao buscar dados do usuário:', error);
-        alert('Erro ao buscar dados do usuário!');
-    });
+    // .catch(error => {
+    //     console.error('Erro ao buscar dados do usuário:', error);
+    //     alert('Erro ao buscar dados do usuário!');
+    // });
 });
