@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prontuário Médico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <header class="main-header">
+            Secretaria Municipal de Saúde
+            <img id="profile-icon" class="profile-icon" src="../imagens/icone.png" alt="Perfil" onclick="toggleProfileMenu()">
+            <div id="profile-menu" class="profile-menu">
+                <ul>
+                    <li onclick="location.href='editar_cadastro.html'">Editar Perfil</li>
+                    <li onclick="location.href='logout.html'">Sair</li>
+                </ul>
+            </div>
+        </header>
+    <!-- Conteúdo Principal -->
+    <main>
+        <h2>Meu Prontuário</h2>
+
+
+        <!-- Prontuário -->
+        <section class="prontuario-container">
+            <div class="prontuario-dados" id="prontuario-dados">
+                <!-- Dados do prontuário serão carregados aqui -->
+                <p class="placeholder">Nenhum dado disponível</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Rua Sá e Albuquerque, 235, Jaraguá, Maceió/AL CEP: 57022-180<br>Telefone: (82) 3312-5860</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
