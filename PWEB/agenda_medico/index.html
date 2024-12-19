@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Médica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="header-container">
+            <h1>Secretaria Municipal de Saúde</h1>
+            <img src="https://img.icons8.com/material-outlined/24/user.png" alt="Perfil" class="profile-icon">
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <h2>Agenda</h2>
+
+        <!-- Filtro por Data -->
+        <div class="filter-container">
+            <label for="filter-date">Filtrar por:</label>
+            <select id="filter-date">
+                <option value="data">Data</option>
+                <option value="especialidade">Especialidade</option>
+                <option value="paciente">Paciente</option>
+            </select>
+        </div>
+
+        <!-- Tabela de Agenda -->
+        <section class="agenda-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Paciente</th>
+                        <th>Data</th>
+                        <th>Hora</th>
+                        <th>Local</th>
+                    </tr>
+                </thead>
+                <tbody id="agenda-tbody">
+                    <!-- Conteúdo será carregado dinamicamente -->
+                    <tr>
+                        <td colspan="4" class="placeholder">Sem dados disponíveis</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Rua Sá e Albuquerque, 235, Jaraguá, Maceió/AL CEP: 57022-180<br>Telefone: (82) 3312-5860</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

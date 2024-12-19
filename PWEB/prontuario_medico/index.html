@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prontuário Médico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="header-container">
+            <h1>Secretaria Municipal de Saúde</h1>
+            <img src="https://img.icons8.com/material-outlined/24/user.png" alt="Perfil" class="profile-icon">
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <h2>Prontuário</h2>
+
+        <!-- Filtros -->
+        <div class="filters-container">
+            <select id="filter-date">
+                <option value="">Data</option>
+                <option value="2024-12-10">10/12/2024</option>
+                <option value="2024-12-15">15/12/2024</option>
+            </select>
+            <select id="filter-patient">
+                <option value="">Paciente</option>
+                <option value="1">Paciente 1</option>
+                <option value="2">Paciente 2</option>
+            </select>
+        </div>
+
+        <!-- Prontuário -->
+        <section class="prontuario-container">
+            <h3>Prontuário de <span id="nome-paciente">(Nome do Paciente)</span></h3>
+            <div class="prontuario-dados" id="prontuario-dados">
+                <!-- Dados do prontuário serão carregados aqui -->
+                <p class="placeholder">Nenhum dado disponível</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Rua Sá e Albuquerque, 235, Jaraguá, Maceió/AL CEP: 57022-180<br>Telefone: (82) 3312-5860</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

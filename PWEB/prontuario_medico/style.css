@@ -1,0 +1,102 @@
+/* Reset */
+body, h1, h2, h3, p, select, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #F58428;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+.profile-icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+/* Conteúdo Principal */
+main {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+main h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Filtros */
+.filters-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.filters-container select {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Prontuário */
+.prontuario-container {
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+.prontuario-container h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.prontuario-dados {
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prontuario-dados p.placeholder {
+    font-size: 1rem;
+    color: #999;
+    font-style: italic;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    color: #666;
+    background-color: #fff;
+}
