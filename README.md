@@ -50,6 +50,7 @@ Este sistema é direcionado para:
 ## Tecnologias Utilizadas
 
 ### Front-End
+- **JavaScript**;
 - **HTML**;
 - **CSS**.
 
