@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!isAuthenticated) {
         // Redireciona para a página de login
-        window.location.href = '/login'; 
+        window.location.href = '../tela_login/index.html'; 
     }
 
     // Busca as consultas do usuário na API
-    fetch('http://localhost:8080/api/consultas', {
+    fetch('https://pweb-project-api.onrender.com/api/consultas', {
         headers: {
             'Authorization': 'Bearer ' + localStorage.getItem('token')
         }
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 cancelarBtn.textContent = 'Cancelar';
                 cancelarBtn.addEventListener('click', () => {
                     if (confirm('Tem certeza de que deseja cancelar esta consulta?')) {
-                        fetch(`http://localhost:8080/api/consultas/${consulta.id}`, {
+                        fetch(`https://pweb-project-api.onrender.com/api/consultas/${consulta.id}`, {
                             method: 'DELETE',
                             headers: {
                                 'Authorization': 'Bearer ' + localStorage.getItem('token')

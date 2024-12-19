@@ -1,4 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+    const isAuthenticated = !!localStorage.getItem('token');
+
+    if (!isAuthenticated) {
+        // Redireciona para a página de login
+        window.location.href = '../tela_login/index.html'; 
+    }
+
     const form = document.querySelector('form');
 
     form.addEventListener('submit', (event) => {
@@ -18,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         // Faz a requisição POST para a API
-        fetch('http://localhost:8080/api/consultas', {
+        fetch('https://pweb-project-api.onrender.com/api/consultas', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

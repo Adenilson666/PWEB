@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
         };
 
         // Envia os dados para a API usando Fetch API
-        fetch('http://localhost:8080/api/auth/signup', {
+        fetch('https://pweb-project-api.onrender.com/api/auth/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

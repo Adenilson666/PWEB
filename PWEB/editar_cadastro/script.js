@@ -1,4 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+    const isAuthenticated = !!localStorage.getItem('token');
+
+    if (!isAuthenticated) {
+        // Redireciona para a página de login
+        window.location.href = '../tela_login/index.html'; 
+    }
+
     const editarCadastroForm = document.getElementById('editarCadastroForm');
     const trocarSenhaForm = document.getElementById('trocarSenhaForm');
 
@@ -22,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 sexo: sexo
             };
 
-            fetch('http://localhost:8080/api/auth/atualizar', {
+            fetch('https://pweb-project-api.onrender.com/api/auth/atualizar', {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -61,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 confirmarSenha: confirmarNovaSenha
             };
 
-            fetch('http://localhost:8080/api/auth/atualizar-senha', {
+            fetch('https://pweb-project-api.onrender.com/api/auth/atualizar-senha', {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
