@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 verProntuarioBtn.textContent = 'Ver Prontuário';
                 verProntuarioBtn.addEventListener('click', () => {
                     // Implemente a lógica para visualizar o prontuário (ex: abrir em nova aba)
-                   window.location.href = '/prontuario_paciente/index.html'
+                   window.location.href = '/PWEB/prontuario_paciente/index.html'
                 });
                 consultaDiv.appendChild(verProntuarioBtn);
                 historicoConsultasSection.appendChild(consultaDiv);
