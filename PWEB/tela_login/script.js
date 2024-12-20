@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
             .then(response => {
                 if (!response.ok) {
-                    // Lógica para lidar com erros de autenticação (401, 403, etc.)
+                    
                     if (response.status === 401) {
                         alert('CPF ou senha inválidos.');
                     } else {
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(data => {
                 localStorage.setItem('token', data.token);
 
-                // Redireciona para a URL da página de login (corrigido)
+                
                 window.location.href = '../tela_menu_principal/menu_principal.html';
             })
             .catch(error => {
